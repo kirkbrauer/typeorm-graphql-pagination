@@ -18,7 +18,7 @@
     "build": "tsc -p tsconfig.json",
     "format": "prettier --write \"src/**/*.ts\"",
     "document": "typedoc --exclude src/**/*.test.ts --out docs src",
-    "test": "jest --config jestconfig.json",
+    "test": "jest --config jestconfig.json --passWithNoTests",
     "test:watch": "jest --config jestconfig.json --watch",
     "test:cov": "jest --config jestconfig.json --coverage",
     "lint": "tslint -p tsconfig.json -c tslint.json",
